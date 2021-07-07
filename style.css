@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+}    
+
+body {
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+
+/*@font-face {
+    font-family: "FunDeadBB";
+}
+src:()*/
+
+#title {
+    display: flex;
+    justify-content: center;
+}
+    
+#message {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.container{
+    border: 3px solid gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 525px;
+    width: 600px;
+    margin: 50px;
+    transform: rotate(-90deg);
+    
+}
+.board {
+    background-color: cornflowerblue;
+    background: linear-gradient(cornflowerblue,rgb(184, 209, 255));
+    height: 512px;
+    width: 585px;
+    padding: 10px;
+    margin: 3px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: auto;
+   
+} 
+
+td{
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    flex-wrap: column-wrap;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    padding-left: 35px;
+}
+    
+#displayP1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    background: linear-gradient(to top right, red, rgb(255, 67, 67));
+    color: white;
+    border: 3px, solid, gray;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+    font-weight: 900;
+    position: relative;
+    left: 200px;
+    top: 38px;
+    
+}
+
+#displayP2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+    background: linear-gradient(to top right, black, rgb(92, 92, 92));
+    color: white;
+    border: 1px, solid, gray;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+    font-weight: 900;
+   
+    position: relative;
+    left: 375px;
+    bottom: 60px;
+    
+}
+
+#reset-game{
+    /* background-color: cornflowerblue; */
+    background: linear-gradient(cornflowerblue,rgb(202, 221, 255));
+    color:white;
+    border: 1px, solid, gray;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    font-size: large;
+    font-weight: 500;
+    position: relative;
+    left: 285px;
+    bottom: 48px;
+}
+
+.red-chip{
+    background: linear-gradient(to top right, red, rgb(255, 67, 67));
+    border: 5px solid white;
+    transition: 0.1s;
+}
+
+.black-chip{
+    background: linear-gradient(to top right, black, rgb(92, 92, 92));
+    border: 5px solid white;
+    transition: 0.1s;
+}
+    
