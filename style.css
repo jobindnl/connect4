@@ -48,7 +48,6 @@ body {
 }
 
 .board {
-  /* background: linear-gradient(cornflowerblue, rgb(184, 209, 255)); */
   background: linear-gradient(rgb(28, 105, 247), rgb(39, 109, 238));
   height: 512px;
   width: 585px;
@@ -74,7 +73,7 @@ td {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top right, red, rgb(255, 67, 67));
+  background: linear-gradient(to top right, red, rgb(255, 107, 107));
   color: white;
   margin: 1rem;
   border: 5px solid white;
@@ -115,7 +114,7 @@ td {
 }
 
 .red-chip {
-  background: linear-gradient(to top right, red, rgb(255, 67, 67));
+  background: linear-gradient(to top right, red, rgb(255, 107, 107));
   border: 5px solid white;
   transition: 0.1s;
 }
