@@ -1,131 +1,127 @@
 * {
-    box-sizing: border-box;
-}    
+  box-sizing: border-box;
+}
 
 body {
-    margin: auto;
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
-    align-content: center;
+  margin: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  background: rgb(255, 217, 0);
+  justify-content: center;
+  align-content: center;
+  font-family: sans-serif;
 }
 
-/*@font-face {
-    font-family: "FunDeadBB";
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-src:()*/
+
+.player_container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
 
 #title {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  width: 28rem;
 }
-    
+
 #message {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-
-
-.container{
-    border: 3px solid gray;
-    border-radius: 20px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 525px;
-    width: 600px;
-    margin: 50px;
-    transform: rotate(-90deg);
-    
+.container {
+  border: 3px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 525px;
+  width: 600px;
+  margin: 50px;
+  transform: rotate(-90deg);
 }
+
 .board {
-    background-color: cornflowerblue;
-    background: linear-gradient(cornflowerblue,rgb(184, 209, 255));
-    height: 512px;
-    width: 585px;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: auto;
-   
-} 
-
-td{
-    display: inline-block;
-    background-color: white;
-    border-radius: 50%;
-    flex-wrap: column-wrap;
-    position: relative;
-    height: 80px;
-    width: 80px;
-    padding-left: 35px;
+  /* background: linear-gradient(cornflowerblue, rgb(184, 209, 255)); */
+  background: linear-gradient(rgb(28, 105, 247), rgb(39, 109, 238));
+  height: 512px;
+  width: 585px;
+  padding: 10px;
+  margin: 3px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: auto;
 }
-    
+
+td {
+  display: inline-block;
+  background-color: white;
+  border-radius: 50%;
+  flex-wrap: column-wrap;
+  position: relative;
+  height: 80px;
+  width: 80px;
+  padding-left: 35px;
+}
+
 #displayP1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: red; */
-    background: linear-gradient(to top right, red, rgb(255, 67, 67));
-    color: white;
-    border: 3px, solid, gray;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    font-size: large;
-    font-weight: 900;
-    position: relative;
-    left: 200px;
-    top: 38px;
-    
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top right, red, rgb(255, 67, 67));
+  color: white;
+  margin: 1rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: larger;
+  font-weight: 500;
 }
 
 #displayP2 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: black; */
-    background: linear-gradient(to top right, black, rgb(92, 92, 92));
-    color: white;
-    border: 1px, solid, gray;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    font-size: large;
-    font-weight: 900;
-   
-    position: relative;
-    left: 375px;
-    bottom: 60px;
-    
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top right, black, rgb(92, 92, 92));
+  color: white;
+  margin: 1rem;
+  border: 5px solid white;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  font-size: larger;
+  font-weight: 500;
 }
 
-#reset-game{
-    /* background-color: cornflowerblue; */
-    background: linear-gradient(cornflowerblue,rgb(202, 221, 255));
-    color:white;
-    border: 1px, solid, gray;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    font-size: large;
-    font-weight: 500;
-    position: relative;
-    left: 285px;
-    bottom: 48px;
+#reset-game {
+  /* background: linear-gradient(rgb(255, 243, 5), rgb(227,214,4)); */
+  background: linear-gradient(rgb(106, 215, 106), rgb(98, 182, 98));
+  color: black;
+  border: 0px solid transparent;
+  padding: 1em;
+  border-radius: .3rem;
+  /* border-radius: 50%; */
+  /* width: 100px; */
+  /* height: 100px; */
+  font-size: large;
+  font-weight: 500;
 }
 
-.red-chip{
-    background: linear-gradient(to top right, red, rgb(255, 67, 67));
-    border: 5px solid white;
-    transition: 0.1s;
+.red-chip {
+  background: linear-gradient(to top right, red, rgb(255, 67, 67));
+  border: 5px solid white;
+  transition: 0.1s;
 }
 
-.black-chip{
-    background: linear-gradient(to top right, black, rgb(92, 92, 92));
-    border: 5px solid white;
-    transition: 0.1s;
+.black-chip {
+  background: linear-gradient(to top right, black, rgb(92, 92, 92));
+  border: 5px solid white;
+  transition: 0.1s;
 }
-    
