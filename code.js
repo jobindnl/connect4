@@ -17,7 +17,7 @@ button.addEventListener("click", resetGame)
 table.addEventListener('click', insertToken)
 
 function insertToken(event) {
-    if (event.path.length === 10) { //avoids null return value when clicking anywhere else in the table
+    if (event.composedPath().length === 10) { //avoids null return value when clicking anywhere else in the table
         let parentRow = document.getElementById(`${event.target.parentElement.id}`).id
         let column = boardModel[parentRow].indexOf('0')
         if (column > -1) { //checks if there are any more 0 left in the array. won't add if array is filled for the column
